@@ -15,9 +15,13 @@ gem 'puma', '~> 3.7'
 # Authentication
 gem "devise_token_auth"
 
+gem "cloudinary"
+
 group :development, :test do
   # debugging 
   gem "pry-rails"
+
+  gem "dotenv-rails"
   # Seed Fake Data
   gem "faker", :git => "https://github.com/stympy/faker.git", :branch => "master"
 end
