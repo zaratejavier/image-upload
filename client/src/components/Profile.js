@@ -9,7 +9,7 @@ class Profile extends React.Component {
   state ={editing:false, formValues: {name: '', email: '', file: ''}}
   
   componentDidMount() {
-    const { auth: { user: { name, email } } } = this.props
+    const { auth: { user: { name, email } } } = this.props //we are just deconstructering here
     
     this.setState({formValues: {name, email}})
   }
